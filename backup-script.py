@@ -91,12 +91,12 @@ def check_admin_privileges():
         except:
             is_admin = False
         if not is_admin:
-            print(f"{Fore.RED}Error:{Style.RESET_ALL} This script requires administrative privileges. Please run as Administrator.")
+            print("Error: This script requires administrative privileges. Please run as Administrator.")
             sys.exit(1)
     else:
         # Check for sudo privileges on Unix-like systems
         if os.geteuid() != 0:
-            print(f"{Fore.RED}Error:{Style.RESET_ALL} This script requires sudo/root privileges. Please run with 'sudo'.")
+            print("Error: This script requires sudo/root privileges. Please run with 'sudo'.")
             sys.exit(1)
 
 def manage_backup_sources():
