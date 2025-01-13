@@ -9,7 +9,7 @@ This is a Python-based backup management tool designed to streamline the process
 3. **Backup Destination Setup**: Prompts the user to choose a backup location or creates a default folder.
 4. **Automated Backup**: Compresses selected files and folders into a ZIP file with a timestamp.
 5. **Event Logging**: Records all actions, warnings, and errors in a log file for better traceability.
-6. **Cross-Platform Compatibility**: Supports Windows, Linux, and macOS environments.
+6. **Cross-Platform Compatibility**: Supports Windows and Linux environments.
 
 ## Requirements
 
@@ -82,6 +82,7 @@ sudo python3 backup_tool.py
 - Ensure Python is installed and added to your system's PATH.
 - Run the script with administrative privileges if encountering permission errors.
 - Check the log file for detailed error messages.
+- For Windows, use PowerShell to make optimal use of the script.
 
 ## License
 
